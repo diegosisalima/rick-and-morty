@@ -1,0 +1,50 @@
+div.img {
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Resident-card {
+  box-shadow: 12px 12px 12px black;
+  border-radius: 1rem;
+}
+.Resident-card b {
+  font-weight: 100;
+  color: #05c9d7;
+}
+.Resident-card p {
+  text-shadow: 1px 1px 3px black, 1px -1px 3px black;
+}
+.Resident-card .name {
+  text-align: center;
+  padding: 0.5rem 0;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.Resident-card .main {
+  padding: 0.5rem 6px;
+}
+.Resident-card .footer {
+  text-align: center;
+  padding: 3px 0;
+  border-bottom-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.Alive {
+  background-color: #219407;
+}
+.Dead {
+  background-color: #b6042a;
+}
+.unknown {
+  background-color: #5e606c;
+}
+@media screen and (max-width: 900px) {
+  div.img {
+    width: 150px;
+    height: 150px;
+  }
+  .Resident-card {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,104 @@
+/*UTILITIES ----------------------------------*/
+.abs-center-h {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.flex-galery {
+  background-color: #fcedf2;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/*CITE STYLE ----------------------------------*/
+.header {
+  height: 100vh;
+  background-color: #010101;
+  position: relative;
+}
+.search {
+  position: absolute;
+  bottom: 200px;
+}
+.logo {
+  position: absolute;
+  top: 250px;
+  width: 600px;
+  animation: logoAnimation 1s ease-in-out infinite;
+  animation-direction: alternate;
+}
+.input {
+  /*Variables*/
+  --width-input: 338px;
+  --height-input: 2.5rem;
+  --bg-button: #003f5c;
+
+  width: fit-content;
+  position: relative;
+}
+.input input {
+  height: var(--height-input);
+  width: var(--width-input);
+  border-radius: var(--height-input);
+  border: 1px solid gray;
+  padding-left: 1rem;
+  font-size: calc(var(--height-input) / 2);
+}
+.input input:focus {
+  outline: none;
+}
+.input button {
+  height: var(--height-input);
+  width: var(--height-input);
+  border: 1px solid gray;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  background-color: var(--bg-button);
+  position: absolute;
+  right: 0;
+}
+.input .bx-search-alt-2 {
+  font-size: calc(var(--height-input) / 1.5);
+  color: whitesmoke;
+  padding-right: 1px;
+}
+.card-container {
+  background-image: linear-gradient(
+    to top,
+    #05c9d7,
+    #00c5c2,
+    #00c0a9,
+    #00b98b,
+    #13b26b,
+    #00a16c,
+    #00906a,
+    #007f66,
+    #005f64,
+    #033e4e,
+    #16202c,
+    #010101
+  );
+  padding: 2rem 0;
+}
+.location {
+  position: absolute;
+  text-align: center;
+  bottom: 10px;
+  font-size: x-large;
+}
+@media screen and (max-width: 900px) {
+  .logo {
+    width: 350px;
+    top: 9rem;
+  }
+}
+
+@keyframes logoAnimation {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-49%);
+  }
+}
